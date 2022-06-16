@@ -17,11 +17,18 @@ const Invite = () => {
       setcheckAutomation(true);
       setcheckSubVal(true);
       setdisableSubCheckBox(true);
+    } else if (e.value === "Content Manager") {
+      setcheckAutomation(false);
+      setcheckSubVal(true);
+      setdisableSubCheckBox(false);
+    } else if (e.value === "Developer") {
+      setcheckAutomation(false);
+      setcheckSubVal(false);
+      setdisableSubCheckBox(false);
     }
   };
   const reverseCheck = (e) => {
     console.log(e.value);
-    console.log(isSelected);
     setCheckRadio(!checkRadio);
     setcheckSubVal(true)
     setcheckAutomation(!checkAutomation);
@@ -77,8 +84,8 @@ const Invite = () => {
                             <div className="ml-2 flex item-start mt-2 ">
                               <div className="flex items-center h-5 w-[50%] ">
                                 <input
-                                  id="referral"
-                                  name="comments"
+                                  id={ReferralData.HeadingCheck.permissionsName}
+                                  name={ReferralData.HeadingCheck.permissionsName}
                                   checked={checkAutomation}
                                   value={
                                     ReferralData.HeadingCheck.permissionsName
@@ -98,21 +105,22 @@ const Invite = () => {
                                 <p> {ReferralData.HeadingCheck.description}</p>
                               </div>
                             </div>
-                            {ReferralData.Permissions.map((referral, i) => {
+                            {ReferralData.Permissions.map((referral, index) => {
                               return (
                                 <div
-                                  key={i}
+                                  key={index}
                                   className="ml-5 pb-2 flex items-start mt-1"
                                 >
                                   <input
-                                    id={referral.permissionsName}
-                                    value={referral.permissionsName}
-                                    name={referral.permissionsName}
-                                    checked={checkSubVal}
-                                    onClick={() => subCheckButton()}
-                                    disabled={disableSubCheckBox}
-                                    type="checkbox"
                                     className="focus:ring-white h-4 w-4 text-green-500 border-gray-300 rounded"
+                                    type="checkbox"
+                                    name={referral.permissionsName}
+                                    id={referral.permissionsName}
+                                    checked={checkSubVal || false}
+                                    onChange={() => subCheckButton()}
+                                    disabled={disableSubCheckBox}
+                                   
+                                    
                                   />
                                   <label
                                   className="ml-3 text-sm font-medium text-gray-500 hover:cursor-pointer"

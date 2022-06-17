@@ -23,7 +23,7 @@
             {
                 "value": "write",
                 "category": "automation_email",
-                "id": "automation_publish_write",
+                "id": "automation_email_write",
                 "label": "publish: write",
                 "type": "child",
                 "suffix": "email",
@@ -74,7 +74,7 @@
             {
                 "value": "write",
                 "category": "automation_email",
-                "id": "referral_publish_write",
+                "id": "referral_write",
                 "label": "publish: write",
                 "type": "child",
                 "suffix": "email",

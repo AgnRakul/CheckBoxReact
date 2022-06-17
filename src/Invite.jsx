@@ -6,6 +6,7 @@ import { RadioButton } from "./RadioButton";
 import { Resource } from "./Resource";
 import {ScopeItem} from "./ScopeItem"
 
+
 const { forwardRef,  useImperativeHandle } = React;
 const Invite = forwardRef(({ settings, edit }, ref) => {
   const [resources, setResources] = useState();

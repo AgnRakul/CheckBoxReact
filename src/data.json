@@ -24,15 +24,6 @@
                 "value": "write",
                 "category": "automation_email",
                 "id": "automation_email_write",
-                "label": "publish: write",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access respoistory invitation"
-            },
-            {
-                "value": "write",
-                "category": "automation_email",
-                "id": "automation_email_write",
                 "label": "email_template: write",
                 "type": "child",
                 "suffix": "email",
@@ -41,7 +32,7 @@
             {
                 "value": "read",
                 "category": "automation_email",
-                "id": "automation_email_write",
+                "id": "automation_email_read",
                 "label": "email_template: read",
                 "type": "child",
                 "suffix": "email",
@@ -73,15 +64,6 @@
             },
             {
                 "value": "write",
-                "category": "automation_email",
-                "id": "referral_write",
-                "label": "publish: write",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access respoistory invitation"
-            },
-            {
-                "value": "write",
                 "category": "referral_email",
                 "id": "referral_email_write",
                 "label": "email_template: write",
@@ -92,7 +74,7 @@
             {
                 "value": "read",
                 "category": "referral_email",
-                "id": "referral_email_write",
+                "id": "referral_email_read",
                 "label": "email_template: read",
                 "type": "child",
                 "suffix": "email",

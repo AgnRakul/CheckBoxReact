@@ -21,6 +21,16 @@
                 "description": "Access deployment status"
             },
             {
+                "value": "publish",
+                "category":"automation",
+                "id":"automation_email_publish",
+                "label": "publish: write",
+                "type": "child",
+                "suffix": "publish",
+                "description": "Access Respository Invatation"
+
+            },
+            {
                 "value": "write",
                 "category": "automation_email",
                 "id": "automation_email_write",
@@ -61,6 +71,16 @@
                 "label": "write",
                 "type": "parent",
                 "description": "Access deployment status"
+            },
+            {
+                "value": "publish",
+                "category":"referral",
+                "id":"referral_email_publish",
+                "label": "publish: write",
+                "type": "child",
+                "suffix": "publish",
+                "description": "Access Respository Invatation"
+
             },
             {
                 "value": "write",

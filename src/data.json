@@ -1,4 +1,4 @@
-{
+[{
   "automation": {
     "name": "Automation",
     "id": "automation",
@@ -63,4 +63,4 @@
       }
     ]
   }
-}
+}]

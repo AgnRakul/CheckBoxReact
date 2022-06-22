@@ -1,0 +1,75 @@
+{
+    "email": "rakul0agn@gmail.com",
+    "permissions": {
+        "metrics_cart_activity": {
+            "scopes": [],
+            "id": "metrics_cart_activity"
+        },
+        "automation": {
+            "scopes": [
+                {
+                    "value": "read",
+                    "id": "automation_read"
+                },
+                {
+                    "value": "write",
+                    "id": "automation_write"
+                }
+            ],
+            "id": "automation"
+        },
+        "automation_email": {
+            "scopes": [
+                {
+                    "value": "write",
+                    "id": "automation_email_write"
+                }
+            ],
+            "id": "automation"
+        },
+        "referral": {
+            "scopes": [
+                {
+                    "value": "read",
+                    "id": "referral_read"
+                },
+                {
+                    "value": "write",
+                    "id": "referral_write"
+                }
+            ],
+            "id": "referral"
+        },
+        "referral_email": {
+            "scopes": [
+                {
+                    "value": "write",
+                    "id": "referral_email_write"
+                }
+            ],
+            "id": "referral"
+        },
+        "customers": {
+            "scopes": [],
+            "id": "customers"
+        },
+        "integrations": {
+            "scopes": [],
+            "id": "integrations"
+        },
+        "settings": {
+            "scopes": [],
+            "id": "settings"
+        },
+        "stores": {
+            "scopes": [],
+            "id": "stores"
+        }
+    },
+    "stores": [
+        {
+            "store":"storeName",
+            "storeId":"1256"
+        }
+    ]
+}

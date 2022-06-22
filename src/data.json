@@ -1,105 +1,66 @@
 {
-    "automation": {
-        "name": "Automation",
-        "id": "automation",
-        "description": "Access commit status",
-        "scopes": [
-            {
-                "value": "read",
-                "id": "automation_read",
-                "category": "automation",
-                "label": "read",
-                "type": "parent",
-                "description": "Access commit status"
-            },
-            {
-                "value": "write",
-                "category": "automation",
-                "id": "automation_write",
-                "label": "write",
-                "type": "parent",
-                "description": "Access deployment status"
-            },
-            {
-                "value": "publish",
-                "category":"automation",
-                "id":"automation_email_publish",
-                "label": "publish: write",
-                "type": "child",
-                "suffix": "publish",
-                "description": "Access Respository Invatation"
-
-            },
-            {
-                "value": "write",
-                "category": "automation_email",
-                "id": "automation_email_write",
-                "label": "email_template: write",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access deployment status"
-            },
-            {
-                "value": "read",
-                "category": "automation_email",
-                "id": "automation_email_read",
-                "label": "email_template: read",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access commit status"
-            }
-            
-        ]
-    },
-    "referral": {
-        "name": "Referral",
-        "id": "referral",
-        "description": "Access commit status",
-        "scopes": [
-            {
-                "value": "read",
-                "id": "referral_read",
-                "category": "referral",
-                "label": "read",
-                "type": "parent",
-                "description": "Access commit status"
-            },
-            {
-                "value": "write",
-                "category": "referral",
-                "id": "referral_write",
-                "label": "write",
-                "type": "parent",
-                "description": "Access deployment status"
-            },
-            {
-                "value": "publish",
-                "category":"referral",
-                "id":"referral_email_publish",
-                "label": "publish: write",
-                "type": "child",
-                "suffix": "publish",
-                "description": "Access Respository Invatation"
-
-            },
-            {
-                "value": "write",
-                "category": "referral_email",
-                "id": "referral_email_write",
-                "label": "email_template: write",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access deployment status"
-            },
-            {
-                "value": "read",
-                "category": "referral_email",
-                "id": "referral_email_read",
-                "label": "email_template: read",
-                "type": "child",
-                "suffix": "email",
-                "description": "Access commit status"
-            }
-        ]
-    }
+  "automation": {
+    "name": "Automation",
+    "id": "automation",
+    "description": "Access commit status",
+    "scopes": [
+      {
+        "value": "read",
+        "id": "automation_read",
+        "category": "automation",
+        "label": "read",
+        "type": "parent",
+        "description": "Access commit status"
+      },
+      {
+        "value": "write",
+        "category": "automation",
+        "id": "automation_write",
+        "label": "write",
+        "type": "parent",
+        "description": "Access deployment status"
+      },
+      {
+        "value": "write",
+        "category": "automation_email",
+        "id": "automation_email_write",
+        "label": "email_template: write",
+        "type": "child",
+        "suffix": "email",
+        "description": "Access deployment status"
+      }
+    ]
+  },
+  "referral": {
+    "name": "Referral",
+    "id": "referral",
+    "description": "Access commit status",
+    "scopes": [
+      {
+        "value": "read",
+        "id": "referral_read",
+        "category": "referral",
+        "label": "read",
+        "type": "parent",
+        "description": "Access commit status"
+      },
+      {
+        "value": "write",
+        "category": "referral",
+        "id": "referral_write",
+        "label": "write",
+        "type": "parent",
+        "description": "Access deployment status"
+      },
+      {
+        "value": "write",
+        "category": "referral_email",
+        "id": "referral_email_write",
+        "label": "email_template: write",
+        "type": "child",
+        "suffix": "email",
+        "description": "Access deployment status"
+      }
+    ]
+  }
 }
